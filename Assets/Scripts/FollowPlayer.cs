@@ -8,7 +8,7 @@ public class FollowPlayer : MonoBehaviour
     // Game Object reference to the Vehicle
     public GameObject player;
 
-    // 
+    // Expose editable Vector3 in editor
     public Vector3 offset = new Vector3();
 
     // Start is called before the first frame update
