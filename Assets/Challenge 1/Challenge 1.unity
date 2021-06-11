@@ -824,6 +824,25 @@ MonoBehaviour:
   speed: 0.5
   rotationSpeed: 150
   verticalInput: 0
+--- !u!1 &828739589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
+  m_PrefabInstance: {fileID: 1239094319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &828739593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828739589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567c86dc0599846679a3e4281b0f12d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propeller: {fileID: 828739589}
+  propellerSpeed: 250
 --- !u!1 &899755176
 GameObject:
   m_ObjectHideFlags: 0
