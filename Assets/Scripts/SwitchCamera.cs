@@ -26,17 +26,17 @@ public class SwitchCamera : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C) && cameraIsFPS)
         {
             cameraIsFPS = false;
-            camera2.gameObject.SetActive(true);
-            camera1.gameObject.SetActive(false);
-            Debug.Log("Camera 1 Active");
+            camera2.SetActive(true);
+            camera1.SetActive(false);
+            Debug.Log("FPS Camera 2 Active");
         }
 
         else if (Input.GetKeyDown(KeyCode.C) && !cameraIsFPS)
         {
             cameraIsFPS = true;
-            camera2.gameObject.SetActive(false);
-            camera1.gameObject.SetActive(true);
-            Debug.Log("Camera 2 Active");
+            camera2.SetActive(false);
+            camera1.SetActive(true);
+            Debug.Log("Gameplay Camera 1 Active");
         }
     }
 }
