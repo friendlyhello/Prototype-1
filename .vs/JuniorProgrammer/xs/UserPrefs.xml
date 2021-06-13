@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{5185D3A7-75EA-FF3C-FDB7-C0093F688ED9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Challenge 1/Scripts/RotatePropeller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SwitchCamera.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="27" Column="18" />
       <File FileName="Assets/Scripts/FollowPlayer.cs" Line="9" Column="30" />
-      <File FileName="Assets/Challenge 1/Scripts/PlayerControllerX.cs" Line="30" Column="1" />
-      <File FileName="Assets/Challenge 1/Scripts/FollowPlayerX.cs" Line="8" Column="43" />
-      <File FileName="Assets/Challenge 1/Scripts/RotatePropeller.cs" Line="16" Column="22" />
+      <File FileName="Assets/Challenge 1/Scripts/PlayerControllerX.cs" Line="9" Column="32" />
+      <File FileName="Assets/Challenge 1/Scripts/FollowPlayerX.cs" Line="14" Column="6" />
+      <File FileName="Assets/Challenge 1/Scripts/RotatePropeller.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/SwitchCamera.cs" Line="8" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +14,11 @@
           <Node name="JuniorProgrammer" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Challenge 1" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="RotatePropeller.cs" selected="True" />
-                </Node>
+                <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="SwitchCamera.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
