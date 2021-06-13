@@ -1251,7 +1251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1960327945
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1393,8 +1393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107baef06ee184cb79ba72ba9ec2f2ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera1: {fileID: 660194293}
-  camera2: {fileID: 1960327944}
+  camera1: {fileID: 1960327944}
+  camera2: {fileID: 660194293}
 --- !u!4 &2134508477
 Transform:
   m_ObjectHideFlags: 0

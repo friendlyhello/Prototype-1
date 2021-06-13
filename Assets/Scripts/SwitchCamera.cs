@@ -23,17 +23,17 @@ public class SwitchCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C) && cameraIsFPS)
+        if (Input.GetKeyDown(KeyCode.C) && !cameraIsFPS)
         {
-            cameraIsFPS = false;
+            cameraIsFPS = true;
             camera2.SetActive(true);
             camera1.SetActive(false);
             Debug.Log("FPS Camera 2 Active");
         }
 
-        else if (Input.GetKeyDown(KeyCode.C) && !cameraIsFPS)
+        else if (Input.GetKeyDown(KeyCode.C) && cameraIsFPS)
         {
-            cameraIsFPS = true;
+            cameraIsFPS = false;
             camera2.SetActive(false);
             camera1.SetActive(true);
             Debug.Log("Gameplay Camera 1 Active");
