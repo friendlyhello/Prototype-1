@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //** OLD CODE! Keep as learning reference */
 
-    // Vehicle movement speed
-    public float moveSpeed = 0;
+    // Vehicle movement speed no longer needed since using RigiBody physics
+    // public float moveSpeed = 0.0f;
 
-    // Vehicle turn speed
-    public float turnSpeed = 0;
+    public float turnSpeed = 0.0f;
 
     // Vehicle input axis for left/right
     public float horizontalInput;
@@ -17,18 +17,30 @@ public class PlayerController : MonoBehaviour
     // Vehicle input axis for forward/backward
     public float verticalInput;
 
-    // Start is called before the first frame update
+
+    //** NEW CODE! *//
+
+    [SerializeField]
+    private float horsePower = 100.0f;
+  
+    private Rigidbody playerRb;
+
+
+    
     void Start()
     {
-       
+        playerRb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         // Map axis input to "Horizontal"
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+
+
+        //** OLD CODE! But keep as learning reference *//
 
         // Move the vehicle forward
         //transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
@@ -37,9 +49,14 @@ public class PlayerController : MonoBehaviour
         //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
 
         // Turn/Steer the vehicle forward or backward
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * verticalInput);
+        //transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * verticalInput);
+
+
+        //** NEW CODE! */
+
+        playerRb.AddRelativeForce(Vector3.forward * verticalInput * horsePower);
 
         // Turn/Steer the vehicle with transform.Rotate
-        transform.Rotate(Vector3.up * Time.deltaTime * moveSpeed * horizontalInput);
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
