@@ -22,7 +22,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float horsePower = 100.0f;
-  
+
+    [SerializeField]
+    GameObject centerOfMass;
+
     private Rigidbody playerRb;
 
 
@@ -30,6 +33,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+
+        // RigiBidy centerOfMass is not "this" centerOfMass so added this to be clear
+        playerRb.centerOfMass = this.centerOfMass.transform.position;
     }
 
     
